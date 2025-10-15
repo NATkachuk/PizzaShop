@@ -1,0 +1,19 @@
+@mixin Flex($fd,$jc,$ai,$gp ) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}
+@mixin Mulish($fs,$fw,$lh) {
+    font-family: 'Mulish';
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin Montserrat($fs,$fw,$lh) {
+    font-family: 'Montserrat';
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
