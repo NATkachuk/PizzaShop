@@ -1,0 +1,37 @@
+@use '../../Scss/mixin';
+@use '../../Scss/reset';
+@use '../../Scss/vars';
+
+.header {
+    @include mixin.Flex(row, space-around, center, 0);
+    padding: 60px 0;
+    .logo {
+        @include mixin.Mulish(34px, 800, 41px);
+        color: vars.$third-color;
+    }
+    .nav{
+        &__list {
+            @include mixin.Flex(row, center, center, 80px);
+        }
+        &__link {
+            @include mixin.Mulish(18px, 600, 22px);
+            color: vars.$fourth-color;
+
+            &:hover {
+                color: vars.$third-color;
+            }
+        }
+    }
+   &-container {
+        @include mixin.Flex(row, center, center, 30px);
+        &__btn{
+            padding: 11px 56px;
+            background-color: vars.$third-color;
+            border-radius: 700px;
+            &-link {
+                @include mixin.Mulish(18px, 600, 22px);
+                color: vars.$fourth-color;
+            }
+        }
+    }
+}
